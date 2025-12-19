@@ -8,7 +8,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: instance
     alb.ingress.kubernetes.io/healthcheck-path: /healthz/ready
-    alb.ingress.kubernetes.io/healthcheck-port: "30821" # this port should be changed based on the istio-ingressgateway port, such as 31989,  istio-ingressgateway          NodePort    10.100.100.38   <none>        15021:30201/TCP,80:31989/TCP,443:31998/TCP,31400:32002/TCP,15443:32255/TCP   60m
+    alb.ingress.kubernetes.io/healthcheck-port: "30201" # this port should be changed based on the istio-ingressgateway port, such as 30201,  istio-ingressgateway          NodePort    10.100.100.38   <none>        15021:30201/TCP,80:31989/TCP,443:31998/TCP,31400:32002/TCP,15443:32255/TCP   60m
 spec:
   ingressClassName: alb
   rules:
